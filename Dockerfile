@@ -35,7 +35,7 @@ RUN npm install && npm update && npm cache clean --force
 COPY --chown=nodejs:nodejs . .
 
 # exposed port/s
-EXPOSE 3306
+EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s CMD npm run healthcheck-manual
 
